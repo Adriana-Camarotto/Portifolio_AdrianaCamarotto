@@ -6,11 +6,41 @@
 
 /* element selectors  */
 header {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: #000000d4;
   width: 100%;
-  height: 100px;  
+  height: 100px;
+  position: fixed;
+ 
 }
+
+.header h1 {
+  display: inline-block;
+  font-size: 40px;
+  padding-left: 50px;
+  text-align: center;
+  color: white;
+  
+}
+
+.header nav { 
+  padding-top: 30px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  margin-left: 25px;  
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+.header nav ul li {
+  display: inline-block;
+}
+
+
 
 body {
   margin: 0;
@@ -24,8 +54,53 @@ body {
   background-color: #000000;
 }
 
-h1,
-h2,
+.hero-banner {
+  margin: 0px;
+  padding: 350px;
+  color: rgb(233, 178, 12);
+  border: green solid 4px;
+
+}  
+/* imagem profile  */
+.hero-banner div img {
+  width: 25%;
+  border-radius: 50%;
+  background-image: linear;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  position: absolute;
+  z-index: -1;
+  border: 1px blue solid;
+}
+
+/* text hero-banner  */
+.hero-banner h2 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 90px;
+  color: #ffd701;
+  text-align: left;
+  align-content: center;
+  line-height: 25%;
+  border: 1px rgb(128, 0, 255) solid;
+
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  margin: 15px;
+  text-align: left;
+  align-content: center;
+  /* border: 1px rgb(0, 255, 55) solid; */
+}
+h2 {
+  color: #ffd701;
+  font-size: 54.5px;
+
+}
+
 h3,
 h4,
 h5,
@@ -34,9 +109,12 @@ h6 {
 }
 
 a {
-  color: #A1A1AA;
+  color: white;
   text-decoration: none;
   cursor: pointer;
+  padding: 40px;
+  font-size: 30px;
+
 
 }
 p {
