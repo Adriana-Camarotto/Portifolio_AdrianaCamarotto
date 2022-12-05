@@ -4,25 +4,9 @@
   padding: 0;
 }
 
-/* element selectors  */
-header {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #000000d4;
-  width: 100%;
-  height: 100px;
-  position: fixed;
- 
-}
 
-.header h1 {
-  display: inline-block;
-  font-size: 40px;
-  padding-left: 50px;
-  text-align: center;
-  color: white;
-  
-}
 
+/* Navigation CSS */
 .header nav { 
   padding-top: 30px;
   margin-right: 20px;
@@ -34,19 +18,38 @@ header {
 
 header nav ul {
   list-style-type: none;
+  display: inline-block;
 }
 
 .header nav ul li {
   display: inline-block;
+  display: inline-block;
 }
 
+/* element selectors  */
 
+header {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #000000d4;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+ 
+}
+
+.header h1 {
+  
+  font-size: 30px;
+  padding-left: 60px;
+  text-align:d left;
+  color: white;
+  padding: 20px;
+}
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
   background-image: url(./images/cool-website-background-23-920x518.jpg);
   background-position: top center;
   background-size: 100%;
@@ -54,55 +57,121 @@ body {
   background-color: #000000;
 }
 
+/* Hero container */
 .hero-banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   margin: 0px;
-  padding: 350px;
+  padding: 200px;
   color: rgb(233, 178, 12);
   border: green solid 4px;
 
 }  
-/* imagem profile  */
-.hero-banner div img {
-  width: 25%;
-  border-radius: 50%;
-  background-image: linear;
-  background-size: cover;
-  background-position: center;
-  margin: 10px;
-  position: absolute;
-  z-index: -1;
-  border: 1px blue solid;
-}
-
 /* text hero-banner  */
 .hero-banner h2 {
   margin: 0px;
-  padding: 0px;
+  padding-left: 300px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Luida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 90px;
   color: #ffd701;
   text-align: left;
   align-content: center;
-  line-height: 25%;
-  border: 1px rgb(128, 0, 255) solid;
+  line-height: 2cm;
+  /* border: 1px rgb(128, 0, 255) solid; */
+}
+
+ 
+/* set up the style for the page-wrapper  */
+.page-wrapper {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid pink;
+}
+
+/* about me  container  */
+.about-me {
+  display: block;
+  padding-top: 100px;
+  margin: 20px;
+  border: 1px solid blue;
+  height: 1024px;
+  }
+
+.about-me img {
+  width: auto;
+  height: 500px;
+  border-radius: 4%;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-top: 60px;
 
 }
 
+/* skills container*/
+.page-section-skills {
+  margin: 20px;
+  border: 1px solid darkmagenta;
+  height: 1024px;
+}
+
+/* Portifolio container  */
+.page-section-work {
+  margin: 20px;
+  border: 1px solid burlywood;
+  height: 1024px;
+}
+
+/* contact container  */
+.page-section-contact {
+  margin: 20px;
+  border: 1px solid red;
+  height: 624px;
+}
+
+.page-section-contact img {
+  height: 60px;
+
+
+}
+
+
+
+/* positining the images to the main area  */
+.float-left {
+  float: left;
+  margin-right: 25px;
+
+}
+
+.float-right {
+  float: right;
+  margin-right: 25px;
+}
+
+/* typo  */
 h1 {
   color: white;
   font-size: 40px;
   margin: 15px;
+  padding-left: 300px;
   text-align: left;
   align-content: center;
   /* border: 1px rgb(0, 255, 55) solid; */
 }
 h2 {
   color: #ffd701;
-  font-size: 54.5px;
+  font-size: 25px;
+  margin: 100px;
 
 }
 
 h3,
-h4,
+h4 {
+  color: #fdd701;
+  font-size: 20px;
+
+}
 h5,
 h6 {
   margin: 0;
@@ -113,12 +182,18 @@ a {
   text-decoration: none;
   cursor: pointer;
   padding: 40px;
-  font-size: 30px;
+  font-size: 25px;
 
 
 }
 p {
   margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Luida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  font-size: 25px;
+  line-height: 32px; /*within paragraphs*/
+  margin-bottom: 30px; /*between paragraphs*/
+
 }
 
 .icon {
@@ -126,7 +201,35 @@ p {
   
 }
 
-.work_icon {
-
+button {
+  display: inline-block;
+  background-color: #ffd701;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Luida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  margin-left: 60px;
+  text-align: left;
+  margin-top: 30px;
+  padding: 5px;
 }
 
+
+/* Grid CSS */
+
+
+
+/* footer  */
+
+.footer {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  height: 80px;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  background-color: #ffd701;
+
+}
