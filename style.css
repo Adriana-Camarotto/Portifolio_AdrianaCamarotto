@@ -4,32 +4,29 @@
   padding: 0;
 }
 
-
-
 /* Navigation CSS */
 .header nav { 
   padding-top: 30px;
   margin-right: 20px;
   float: right;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 20px;
   margin-left: 25px;  
 }
 
-header nav ul {
+.header nav ul {
   list-style-type: none;
   display: inline-block;
 }
 
 .header nav ul li {
   display: inline-block;
-  display: inline-block;
 }
 
 /* element selectors  */
 
-header {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.header {
+  font-family: 'Poppins', sans-serif;
   background-color: #000000d4;
   width: 100%;
   height: 100px;
@@ -38,18 +35,25 @@ header {
 }
 
 .header h1 {
-  
   font-size: 30px;
   padding-left: 60px;
-  text-align:d left;
+  text-align: left;
   color: white;
+  padding: 20px;
+}
+
+.header h2 {
+  font-size: 20px;
+  padding-left: 60px;
+  text-align: left;
+  color: #ff01aa;
   padding: 20px;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-image: url(./images/cool-website-background-23-920x518.jpg);
   background-position: top center;
   background-size: 100%;
@@ -59,12 +63,6 @@ body {
 
 /* Hero container */
 .hero-banner {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 0px;
-  padding: 200px;
-  color: rgb(233, 178, 12);
   border: green solid 4px;
 
 }  
@@ -72,7 +70,7 @@ body {
 .hero-banner h2 {
   margin: 0px;
   padding-left: 300px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Luida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 90px;
   color: #ffd701;
   text-align: left;
@@ -92,19 +90,28 @@ body {
 /* about me  container  */
 .about-me {
   display: block;
-  padding-top: 100px;
+  padding-top: 110px;
   margin: 20px;
   border: 1px solid blue;
-  height: 1024px;
+  height: 900px;
   }
 
+.about-me div p {
+  margin-left: 100px;
+  width: 1024px;
+  /* border: 1px solid orange; */
+}
+
+.about-me div h3 {
+  margin-left: 900px;
+}
 .about-me img {
   width: auto;
-  height: 500px;
+  height: 600px;
   border-radius: 4%;
-  padding-right: 50px;
+  padding-right: 100px;
   padding-left: 50px;
-  margin-top: 60px;
+  margin-top: 5px;
 
 }
 
@@ -112,9 +119,27 @@ body {
 .page-section-skills {
   margin: 20px;
   border: 1px solid darkmagenta;
-  height: 1024px;
+  height: 800px;
 }
 
+.page-section-skills h2 {
+  margin: 100px;
+   
+}
+
+.page-section-skills img {
+  margin-left: 400px;
+  margin-top: 10px;
+  width: 400px;
+}
+
+.page-section-skills div p {
+  margin-left: 900px;
+  margin-top: 20px;
+  padding-left: 100px;
+  width: 500px;
+  text-align: justify;
+}
 /* Portifolio container  */
 .page-section-work {
   margin: 20px;
@@ -127,26 +152,27 @@ body {
   margin: 20px;
   border: 1px solid red;
   height: 624px;
+  display: flex;
+  flex-direction: row;
+
 }
 
 .page-section-contact img {
   height: 60px;
-
-
+  align-items: center;
 }
 
-
+.page-section-contact h1 {
+  align-items: center;
+}
 
 /* positining the images to the main area  */
 .float-left {
   float: left;
-  margin-right: 25px;
-
 }
 
 .float-right {
   float: right;
-  margin-right: 25px;
 }
 
 /* typo  */
@@ -159,46 +185,42 @@ h1 {
   align-content: center;
   /* border: 1px rgb(0, 255, 55) solid; */
 }
+
 h2 {
   color: #ffd701;
-  font-size: 25px;
-  margin: 100px;
+  font-size: 60px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  text-align: left;
 
 }
 
-h3,
-h4 {
+h3 {
   color: #fdd701;
   font-size: 20px;
+}
 
-}
-h5,
-h6 {
-  margin: 0;
-}
 
 a {
   color: white;
   text-decoration: none;
   cursor: pointer;
-  padding: 40px;
-  font-size: 25px;
-
-
+  padding: 35px;
+  font-size: 30px;
+  text-decoration-line: underline;
+  text-decoration-style: solid; /* this is default */
 }
+
+
 p {
   margin: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Luida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: white;
   font-size: 25px;
   line-height: 32px; /*within paragraphs*/
   margin-bottom: 30px; /*between paragraphs*/
+  text-align: justify;
 
-}
-
-.icon {
-  background-color: none;
-  
 }
 
 button {
@@ -207,10 +229,10 @@ button {
   border-radius: 8px;
   cursor: pointer;
   color: black;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Luida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 30px;
   margin-left: 60px;
-  text-align: left;
+  text-align: center;
   margin-top: 30px;
   padding: 5px;
 }
@@ -218,7 +240,79 @@ button {
 
 /* Grid CSS */
 
+#heroGrid {
+  padding-top: 400px;
+  padding-left: 200px;
+  display: grid;
+  min-height: 625px;
+  height: 85vh;
+  align-items: center;
+  align-content: center;
+  grid-template-rows: 25% 75%;
+  grid-template-columns: 25% 75%;
+  grid-template-areas: 
+  "adriProfile heroText";
+}
 
+.adriProfile {
+  background-image: url(./images/Adri_profile_img.png);
+  grid-area: adriProfile;
+}
+
+.heroText {
+  grid-area: heroText;
+  /* background-image: url(); */
+  justify-content: center;
+
+
+}
+
+/* #skillsGrid { 
+  margin: 100px 5%;
+  display: grid;
+  min-height: 625px;
+  height: 85vh;
+  align-items: top;
+  align-content: left;
+  grid-template-rows: 12.5% 25% 25%;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: 
+  "p1 aboutme"
+  "p2 aboutme"
+  "p3 loveThings";
+} */
+
+#contactGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-areas: 
+  "clickIcon clickIcon clickIcon"
+  "linKedinIcon WhatsAppIcon emailIcon";
+}
+
+/* Grid template areas  */
+#clickIcon {
+  background-image: url("./images/get_in_touch_icon.png");
+  grid-area: clickIcon;
+  
+}
+
+#linKedinIcon {
+  background-image: url("./images/linkedin_icon.png");
+  grid-area: linKedinIcon;
+  
+}
+
+#WhatsAppIcon {
+  background-image: url("./images/WhatsApp_icon.png");
+  grid-area: WhatsAppIcon;
+}
+#emailIcon {
+  grid-area: emailIcon;
+  background-image: url("./images/email_icon.png");
+}
 
 /* footer  */
 
@@ -226,10 +320,13 @@ button {
   display: block;
   padding: 20px;
   width: 100%;
-  height: 80px;
+  height: 8;
   color: black;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   background-color: #ffd701;
 
 }
+
+
+  
