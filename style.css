@@ -24,7 +24,6 @@
 }
 
 /* element selectors  */
-
 .header {
   font-family: 'Poppins', sans-serif;
   background-color: #000000d4;
@@ -66,6 +65,7 @@ body {
   border: green solid 4px;
 
 }  
+
 /* text hero-banner  */
 .hero-banner h2 {
   margin: 0px;
@@ -87,8 +87,8 @@ body {
   border: 1px solid pink;
 }
 
-/* about me  container  */
-.about-me {
+/* about me container  */
+#about-me {
   display: block;
   padding-top: 110px;
   margin: 20px;
@@ -96,75 +96,91 @@ body {
   height: 900px;
   }
 
-.about-me div p {
+#about-me div p {
   margin-left: 100px;
   width: 1024px;
   /* border: 1px solid orange; */
 }
 
-.about-me div h3 {
+#about-me div h3 {
   margin-left: 900px;
 }
-.about-me img {
+#about-me img {
   width: auto;
   height: 600px;
   border-radius: 4%;
   padding-right: 100px;
   padding-left: 50px;
   margin-top: 5px;
-
 }
 
-/* skills container*/
-.page-section-skills {
+/*skills container*/
+#page-section-skills {
   margin: 20px;
   border: 1px solid darkmagenta;
-  height: 800px;
+  height: 900px;
 }
 
-.page-section-skills h2 {
-  margin: 100px;
-   
+#page-section-skills h2 {
+  margin: 120px;
+  
 }
 
-.page-section-skills img {
+#page-section-skills img {
   margin-left: 400px;
-  margin-top: 10px;
-  width: 400px;
+  width: 500px;
 }
 
-.page-section-skills div p {
+#page-section-skills div p {
   margin-left: 900px;
   margin-top: 20px;
   padding-left: 100px;
   width: 500px;
   text-align: justify;
 }
-/* Portifolio container  */
-.page-section-work {
+
+/* Portifolio container*/
+#page-section-work {
   margin: 20px;
   border: 1px solid burlywood;
-  height: 1024px;
+  height: 890px;
 }
 
-/* contact container  */
-.page-section-contact {
-  margin: 20px;
+#page-section-work h2 {
+  margin-top: 120px;
+  margin-left: 200px;
+}
+
+#repositoryIcon {
+  height: 60px;
+}
+
+#workIcon {
+  height: 250px;
+}
+
+/*contact container*/
+#page-section-contact {
+  padding: 20px;
   border: 1px solid red;
   height: 624px;
-  display: flex;
-  flex-direction: row;
-
+  align-items: center;
 }
 
-.page-section-contact img {
+#page-section-contact img {
   height: 60px;
   align-items: center;
+  align-content: center;
 }
 
-.page-section-contact h1 {
+#page-section-contact h1 {
+  margin-top: 100px;
+  margin-left: 350px;
+  font-size: 90px;
   align-items: center;
+  align-content: center;
 }
+
 
 /* positining the images to the main area  */
 .float-left {
@@ -200,7 +216,6 @@ h3 {
   font-size: 20px;
 }
 
-
 a {
   color: white;
   text-decoration: none;
@@ -208,9 +223,15 @@ a {
   padding: 35px;
   font-size: 30px;
   text-decoration-line: underline;
-  text-decoration-style: solid; /* this is default */
+  text-decoration-style: solid; 
+  text-decoration-color: #ffd701;
 }
 
+a:hover {
+  text-decoration: underline;
+  text-decoration: solid; /* this is default */
+  text-decoration-color: #ffd701;
+}
 
 p {
   margin: 0;
@@ -220,7 +241,6 @@ p {
   line-height: 32px; /*within paragraphs*/
   margin-bottom: 30px; /*between paragraphs*/
   text-align: justify;
-
 }
 
 button {
@@ -237,9 +257,7 @@ button {
   padding: 5px;
 }
 
-
 /* Grid CSS */
-
 #heroGrid {
   padding-top: 400px;
   padding-left: 200px;
@@ -263,32 +281,15 @@ button {
   grid-area: heroText;
   /* background-image: url(); */
   justify-content: center;
-
-
 }
 
-/* #skillsGrid { 
-  margin: 100px 5%;
+.contactGrid {
+  margin: 20px;
+  padding-left: 500px;
   display: grid;
-  min-height: 625px;
-  height: 85vh;
-  align-items: top;
-  align-content: left;
-  grid-template-rows: 12.5% 25% 25%;
-  grid-template-columns: 60% 40%;
-  grid-template-areas: 
-  "p1 aboutme"
-  "p2 aboutme"
-  "p3 loveThings";
-} */
-
-#contactGrid {
-  margin: 0px 5%;
-  display: grid;
-  grid-template-rows: 100px 100px;
+  grid-template-rows: 300px 300px;
   grid-template-columns: 33.3% 33.3% 33.3%;
   grid-template-areas: 
-  "clickIcon clickIcon clickIcon"
   "linKedinIcon WhatsAppIcon emailIcon";
 }
 
@@ -302,7 +303,6 @@ button {
 #linKedinIcon {
   background-image: url("./images/linkedin_icon.png");
   grid-area: linKedinIcon;
-  
 }
 
 #WhatsAppIcon {
@@ -317,16 +317,17 @@ button {
 /* footer  */
 
 .footer {
-  display: block;
-  padding: 20px;
+  display: inline-block;
+  height: 100px;
   width: 100%;
-  height: 8;
+  background-color: #ffd701;
+}
+
+.footer p {
   color: black;
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  background-color: #ffd701;
-
+  font-size: 18px;
+  padding: 10px;
 }
-
-
   
