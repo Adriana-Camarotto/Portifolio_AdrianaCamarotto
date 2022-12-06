@@ -41,13 +41,6 @@
   padding: 20px;
 }
 
-.header h2 {
-  font-size: 20px;
-  padding-left: 60px;
-  text-align: left;
-  color: #ff01aa;
-  padding: 20px;
-}
 
 body {
   margin: 0;
@@ -62,7 +55,7 @@ body {
 
 /* Hero container */
 .hero-banner {
-  border: green solid 4px;
+  /* border: green solid 4px; */
 
 }  
 
@@ -84,7 +77,7 @@ body {
 .page-wrapper {
   display: inline-block;
   width: 100%;
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
 }
 
 /* about me container  */
@@ -92,7 +85,7 @@ body {
   display: block;
   padding-top: 110px;
   margin: 20px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   height: 900px;
   }
 
@@ -117,7 +110,7 @@ body {
 /*skills container*/
 #page-section-skills {
   margin: 20px;
-  border: 1px solid darkmagenta;
+  /* border: 1px solid darkmagenta; */
   height: 900px;
 }
 
@@ -151,12 +144,15 @@ body {
   margin-left: 200px;
 }
 
-#repositoryIcon {
-  height: 60px;
+#page-section-work p {
+  margin-top: 220px;
+  margin-left: 600px;
 }
 
 #workIcon {
-  height: 250px;
+  height: 120px;
+  margin-right: 100px;
+  margin: 300px;
 }
 
 /*contact container*/
@@ -169,16 +165,19 @@ body {
 
 #page-section-contact img {
   height: 60px;
-  align-items: center;
-  align-content: center;
+  margin-top: 0px;
+  margin-left: 700px;
 }
 
 #page-section-contact h1 {
-  margin-top: 100px;
-  margin-left: 350px;
-  font-size: 90px;
-  align-items: center;
-  align-content: center;
+  height: 50px;
+  margin-top: 300px;
+  margin-left: 300px;
+}
+
+#page-section-contact p {
+  margin-top: 50px;
+  margin-left: 550px;
 }
 
 
@@ -208,7 +207,6 @@ h2 {
   margin-left: 100px;
   margin-bottom: 50px;
   text-align: left;
-
 }
 
 h3 {
@@ -272,6 +270,7 @@ button {
   "adriProfile heroText";
 }
 
+/* Grid template areas  */
 .adriProfile {
   background-image: url(./images/Adri_profile_img.png);
   grid-area: adriProfile;
@@ -279,39 +278,7 @@ button {
 
 .heroText {
   grid-area: heroText;
-  /* background-image: url(); */
   justify-content: center;
-}
-
-.contactGrid {
-  margin: 20px;
-  padding-left: 500px;
-  display: grid;
-  grid-template-rows: 300px 300px;
-  grid-template-columns: 33.3% 33.3% 33.3%;
-  grid-template-areas: 
-  "linKedinIcon WhatsAppIcon emailIcon";
-}
-
-/* Grid template areas  */
-#clickIcon {
-  background-image: url("./images/get_in_touch_icon.png");
-  grid-area: clickIcon;
-  
-}
-
-#linKedinIcon {
-  background-image: url("./images/linkedin_icon.png");
-  grid-area: linKedinIcon;
-}
-
-#WhatsAppIcon {
-  background-image: url("./images/WhatsApp_icon.png");
-  grid-area: WhatsAppIcon;
-}
-#emailIcon {
-  grid-area: emailIcon;
-  background-image: url("./images/email_icon.png");
 }
 
 /* footer  */
